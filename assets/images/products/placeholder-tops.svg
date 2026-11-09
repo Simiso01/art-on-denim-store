@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Tops product placeholder">
+  <rect width="800" height="1000" fill="#e8e2d8"/>
+  <rect x="80" y="90" width="640" height="820" fill="#1c2633"/>
+  <circle cx="400" cy="430" r="140" fill="none" stroke="#b8956c" stroke-width="2"/>
+  <text x="400" y="440" text-anchor="middle" fill="#f2efe9" font-family="Georgia, serif" font-size="38" letter-spacing="8">TOPS</text>
+</svg>

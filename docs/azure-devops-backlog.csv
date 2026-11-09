@@ -1,0 +1,9 @@
+ID,Work Item Type,Title,State,Description
+1,Epic,Art on Denim Task 2,Active,Website and Android app for the existing Art on Denim store.
+2,Feature,Website storefront,Closed,Home shop product cart checkout orders journal and studio chat.
+3,Feature,Android app,Active,Same customer flows as the website against the JSON API.
+4,Feature,Google sign-in,Active,OpenID Connect is coded. It stays unverified until a Google client id and secret are added.
+5,Feature,Seed data,Closed,Required tables hold at least 10 linked rows. API tokens are created only by real sign-in.
+6,Task,WampServer,Closed,Site runs on the installed Wamp Apache PHP 7.4.
+7,Task,Physical phone test,New,Record only after the app is installed on a phone using the PC LAN address.
+8,Task,GitHub Actions,New,Workflow is in the repo. It has not run on GitHub until the repo is pushed.

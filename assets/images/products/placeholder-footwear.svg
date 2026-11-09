@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Footwear product placeholder">
+  <rect width="800" height="1000" fill="#e8e2d8"/>
+  <rect x="80" y="90" width="640" height="820" fill="#0c1016"/>
+  <ellipse cx="400" cy="560" rx="210" ry="70" fill="#2a3646"/>
+  <text x="400" y="420" text-anchor="middle" fill="#f2efe9" font-family="Georgia, serif" font-size="34" letter-spacing="6">FOOTWEAR</text>
+</svg>

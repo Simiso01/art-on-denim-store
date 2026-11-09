@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Outerwear product placeholder">
+  <rect width="800" height="1000" fill="#e8e2d8"/>
+  <rect x="80" y="90" width="640" height="820" fill="#121820"/>
+  <path d="M220 280 L400 220 L580 280 L540 780 L260 780 Z" fill="#2a3646"/>
+  <text x="400" y="520" text-anchor="middle" fill="#b8956c" font-family="Georgia, serif" font-size="36" letter-spacing="6">OUTERWEAR</text>
+</svg>

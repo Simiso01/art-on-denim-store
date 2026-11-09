@@ -1,0 +1,38 @@
+# Art on Denim — Apache configuration
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Local WAMP: /art-on-denim/  |  Hosted root: /
+    RewriteBase /
+
+    # Pass Authorization header through to PHP (API bearer tokens)
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Block direct access to sensitive directories
+    RewriteRule ^(config|includes|database)/ - [F,L]
+
+    # Pretty-ish URLs (optional helpers)
+    RewriteRule ^shop/?$ pages/shop.php [L,QSA]
+    RewriteRule ^product/([0-9]+)/?$ pages/product.php?id=$1 [L,QSA]
+    RewriteRule ^cart/?$ pages/cart.php [L,QSA]
+    RewriteRule ^checkout/?$ pages/checkout.php [L,QSA]
+    RewriteRule ^login/?$ pages/login.php [L,QSA]
+    RewriteRule ^register/?$ pages/register.php [L,QSA]
+    RewriteRule ^account/?$ pages/account.php [L,QSA]
+</IfModule>
+
+# Protect .env / sql dumps from web access
+<FilesMatch "\.(sql|env|ini|log)$">
+    Require all denied
+</FilesMatch>
+
+# Security headers (when supported)
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+ErrorDocument 404 /pages/404.php

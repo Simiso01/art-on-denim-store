@@ -1,0 +1,10 @@
+<?php
+/**
+ * Copy to google.local.php. That file is ignored by git.
+ * Create a Google Cloud OAuth client (Web) and set the redirect URI below.
+ */
+return [
+    'client_id' => '',
+    'client_secret' => '',
+    'redirect_uri' => 'http://localhost/art-on-denim/pages/google-callback.php',
+];

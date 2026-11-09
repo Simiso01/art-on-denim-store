@@ -1,0 +1,14 @@
+/vendor/
+/config/google.local.php
+/android/
+/.idea/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+Dockerfile
+railway.toml
+.dockerignore
+/docker/
+/_aod_deploy.zip
+/_aod_extract/

@@ -1,0 +1,273 @@
+/* =============================================================================
+   ART ON DENIM â€” Responsive
+   Breakpoints: 320 / 375 / 390 / 768 / 1024 / 1440+
+   ============================================================================= */
+
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-grid--shop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brand-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .primary-nav__list {
+    gap: var(--space-4);
+  }
+
+  .catalogue-layout,
+  .product-layout,
+  .cart-layout,
+  .auth-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .catalogue-filters,
+  .cart-summary {
+    position: static;
+  }
+
+  .account-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .header-inner {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .brand {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    order: -1;
+  }
+
+  .primary-nav {
+    position: fixed;
+    inset: calc(var(--header-h) + 2rem) 0 auto 0;
+    background: rgba(242, 239, 233, 0.97);
+    border-bottom: 1px solid var(--border);
+    padding: var(--space-5);
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform var(--transition), opacity var(--transition);
+    z-index: 90;
+  }
+
+  .primary-nav.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .primary-nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  .promo-band {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .promo-band__visual {
+    min-height: 14rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container: min(1240px, calc(100% - 1.5rem));
+    --space-8: 3.25rem;
+    --space-9: 4.5rem;
+  }
+
+  .hero {
+    min-height: calc(100svh - 5.5rem);
+    align-items: center;
+  }
+
+  .hero__content {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-7);
+  }
+
+  .hero__brand {
+    letter-spacing: 0.06em;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-grid,
+  .product-grid--shop,
+  .wishlist-grid,
+  .brand-strip--page {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .brand-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .cart-line {
+    grid-template-columns: 96px 1fr;
+  }
+
+  .cart-line__total {
+    grid-column: 2;
+  }
+
+  .form-row,
+  .wishlist-move,
+  .account-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-hero-form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-bar {
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+  }
+
+  .brand__name {
+    display: none;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .product-grid,
+  .product-grid--shop,
+  .wishlist-grid {
+    gap: var(--space-3);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form button {
+    min-height: 2.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --container: min(1320px, calc(100% - 3rem));
+  }
+}
+
+@media (max-width: 1024px) {
+  .checkout-layout,
+  .confirmation-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .confirmation-actions {
+    flex-direction: column;
+  }
+
+  .notification-item {
+    flex-direction: column;
+  }
+
+  .notification-item__actions {
+    text-align: left;
+  }
+
+  .data-table th:nth-child(4),
+  .data-table td:nth-child(4) {
+    display: none;
+  }
+}
+
+/* Extra mobile polish — checkout / auth / tables */
+@media (max-width: 390px) {
+  .header-actions {
+    gap: 0.15rem;
+  }
+
+  .icon-link {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .product-card__title {
+    font-size: 0.92rem;
+  }
+
+  .auth-form,
+  .checkout-form {
+    padding: 1.25rem;
+  }
+
+  .size-option span {
+    min-width: 2.6rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --container: min(1240px, calc(100% - 1rem));
+  }
+
+  .brand__mark {
+    font-size: 1.25rem;
+  }
+
+  .hero__brand {
+    font-size: 2.2rem;
+  }
+}
+
+/* Touch-friendly focus for forms */
+@media (hover: none) {
+  .btn,
+  .admin-btn,
+  .size-option span,
+  .brand-tile {
+    min-height: 44px;
+  }
+}

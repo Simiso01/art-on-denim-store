@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Accessories product placeholder">
+  <rect width="800" height="1000" fill="#e8e2d8"/>
+  <rect x="80" y="90" width="640" height="820" fill="#1c2633"/>
+  <rect x="250" y="360" width="300" height="180" rx="8" fill="none" stroke="#b8956c" stroke-width="2"/>
+  <text x="400" y="465" text-anchor="middle" fill="#f2efe9" font-family="Georgia, serif" font-size="32" letter-spacing="6">AOD</text>
+</svg>

@@ -1,0 +1,14 @@
+# Same protection for product uploads
+<FilesMatch "\.(?i:php|phtml|php3|php4|php5|php7|php8|phar|cgi|pl|py|asp|aspx|exe|sh|bat)$">
+    Require all denied
+</FilesMatch>
+Options -Indexes
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag engine off
+</IfModule>

@@ -8,7 +8,7 @@ declare(strict_types=1);
 @set_time_limit(300);
 @ini_set('memory_limit', '512M');
 
-$zipUrl = 'https://github.com/Simiso01/art-on-denim/archive/refs/heads/main.zip';
+$zipUrl = 'https://github.com/Simiso01/art-on-denim-store/archive/refs/heads/main.zip';
 $target = __DIR__;
 $tmpZip = $target . DIRECTORY_SEPARATOR . '_aod_deploy.zip';
 $tmpDir = $target . DIRECTORY_SEPARATOR . '_aod_extract';
